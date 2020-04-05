@@ -7,12 +7,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: Hexo - jitash</title>
+<title>分类: Android - jitash</title>
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="jitash">
-<meta property="og:url" content="https://jitash.cn/tags/Hexo/index.html">
+<meta property="og:url" content="https://jitash.cn/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/Android/index.html">
 <meta property="og:site_name" content="jitash">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://jitash.cn/images/og_image.png">
@@ -145,8 +145,11 @@ var _hmt = _hmt || [];
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Hexo</a></li>
+            <li><a href="/categories">分类</a></li>
+            
+            <li><a href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">Android</a></li>
         </ul>
         </nav>
     </div>
@@ -156,8 +159,8 @@ var _hmt = _hmt || [];
 <div class="card">
     
     <div class="card-image">
-        <a href="/2020/03/17/hexo-%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/thumbnails/handbook.jpg" alt="hexo 简单命令">
+        <a href="/2020/03/23/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="image is-7by1">
+            <img class="thumbnail" src="/gallery/thumbnails/blog-blocks-wallpaper.jpg" alt="Android性能优化">
         </a>
     </div>
     
@@ -165,17 +168,17 @@ var _hmt = _hmt || [];
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-17T09:42:07.000Z">2020-03-17</time>
+                <time class="level-item has-text-grey" datetime="2020-03-23T07:23:21.000Z">2020-03-23</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/">开发者手册</a>
+                <a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/Android/">Android</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/Android/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">性能优化</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 43 个字)
+                    1 分钟 读完 (大约 158 个字)
                 </span>
                 
                 
@@ -184,13 +187,34 @@ var _hmt = _hmt || [];
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/17/hexo-%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/">hexo 简单命令</a>
+                <a class="has-link-black-ter" href="/2020/03/23/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">Android性能优化</a>
             
         </h1>
         <div class="content">
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g      #生成静态文件 generate</span><br><span class="line">$ hexo clean  #清除缓存</span><br><span class="line">$ hexo d      #提交并推送到远端仓库 deploy</span><br><span class="line">$ hexo s      #调试模式server </span><br><span class="line">$ hexo s --debug #调试debug模式</span><br></pre></td></tr></table></figure>
+            <pre><code># 数据结构优化
+Array
+ArrayList 空间连续，定位查找快
+LinkedList 空间不连续，增删快
+HashMap 数据+链表
+key hashcode ——》 index 冲突 
+前插链表
+object -&gt; hashcode
+填充因子 DEFAULT_LOAD_FACTOR = 0.75f 超过3/4进行扩容，永远会有1/4浪费
+一旦扩容意味着速度慢
+优化点： HashMap预判初始容量
+能用SparseArray就用  int[]+object[] 键值对一一对应
+二分查找key的位置
+更新UI 主线程 线程不安全</code></pre>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/03/23/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>

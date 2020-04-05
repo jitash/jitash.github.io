@@ -7,18 +7,25 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: Hexo - jitash</title>
+<title>Android性能优化 - jitash</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="jitash">
-<meta property="og:url" content="https://jitash.cn/tags/Hexo/index.html">
+    <meta name="description" content="# 数据结构优化 Array ArrayList 空间连续，定位查找快 LinkedList 空间不连续，增删快 HashMap 数据+链表 key hashcode ——》 index 冲突  前插链表 object -&gt; hashcode 填充因子 DEFAULT_LOAD_FACTOR &#x3D; 0.75f 超过3&#x2F;4进行扩容，永远会有1&#x2F;4浪费 一旦扩容意味着速度慢 优化点： HashMa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android性能优化">
+<meta property="og:url" content="https://jitash.cn/2020/03/23/Android%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="jitash">
+<meta property="og:description" content="# 数据结构优化 Array ArrayList 空间连续，定位查找快 LinkedList 空间不连续，增删快 HashMap 数据+链表 key hashcode ——》 index 冲突  前插链表 object -&gt; hashcode 填充因子 DEFAULT_LOAD_FACTOR &#x3D; 0.75f 超过3&#x2F;4进行扩容，永远会有1&#x2F;4浪费 一旦扩容意味着速度慢 优化点： HashMa">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://jitash.cn/images/og_image.png">
+<meta property="og:image" content="https://jitash.cn/gallery/thumbnails/blog-blocks-wallpaper.jpg">
+<meta property="article:published_time" content="2020-03-23T07:23:21.000Z">
+<meta property="article:modified_time" content="2020-03-23T13:49:56.623Z">
 <meta property="article:author" content="jitash">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="性能优化">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jitash.cn/images/og_image.png">
+<meta name="twitter:image" content="https://jitash.cn/gallery/thumbnails/blog-blocks-wallpaper.jpg">
 
 
 
@@ -92,7 +99,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="jitash" height="28">
+                <img src="/images/logo.svg" alt="Android性能优化" height="28">
             
             </a>
         </div>
@@ -128,6 +135,10 @@ var _hmt = _hmt || [];
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -141,54 +152,73 @@ var _hmt = _hmt || [];
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Hexo</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
     <div class="card-image">
-        <a href="/2020/03/17/hexo-%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/" class="image is-7by1">
-            <img class="thumbnail" src="/gallery/thumbnails/handbook.jpg" alt="hexo 简单命令">
-        </a>
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="/gallery/thumbnails/blog-blocks-wallpaper.jpg" alt="Android性能优化">
+        </span>
     </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-17T09:42:07.000Z">2020-03-17</time>
+                <time class="level-item has-text-grey" datetime="2020-03-23T07:23:21.000Z">2020-03-23</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/">开发者手册</a>
+                <a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/Android/">Android</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/%E7%AC%94%E8%AE%B0%E6%9C%AC/Android/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/">性能优化</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 43 个字)
+                    1 分钟 读完 (大约 158 个字)
                 </span>
                 
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
                 
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/17/hexo-%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4/">hexo 简单命令</a>
+                Android性能优化
             
         </h1>
         <div class="content">
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g      #生成静态文件 generate</span><br><span class="line">$ hexo clean  #清除缓存</span><br><span class="line">$ hexo d      #提交并推送到远端仓库 deploy</span><br><span class="line">$ hexo s      #调试模式server </span><br><span class="line">$ hexo s --debug #调试debug模式</span><br></pre></td></tr></table></figure>
+            <pre><code># 数据结构优化
+Array
+ArrayList 空间连续，定位查找快
+LinkedList 空间不连续，增删快
+HashMap 数据+链表
+key hashcode ——》 index 冲突 
+前插链表
+object -&gt; hashcode
+填充因子 DEFAULT_LOAD_FACTOR = 0.75f 超过3/4进行扩容，永远会有1/4浪费
+一旦扩容意味着速度慢
+优化点： HashMap预判初始容量
+能用SparseArray就用  int[]+object[] 键值对一一对应
+二分查找key的位置
+更新UI 主线程 线程不安全</code></pre><a id="more"></a>
+
+<p><a href="https://www.jianshu.com/p/e73768e66b8d">https://www.jianshu.com/p/e73768e66b8d</a></p>
+<h1 id="绘制优化"><a href="#绘制优化" class="headerlink" title="绘制优化"></a>绘制优化</h1><h1 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h1><h1 id="存储优化"><a href="#存储优化" class="headerlink" title="存储优化"></a>存储优化</h1><h1 id="稳定性优化"><a href="#稳定性优化" class="headerlink" title="稳定性优化"></a>稳定性优化</h1><h1 id="耗电优化"><a href="#耗电优化" class="headerlink" title="耗电优化"></a>耗电优化</h1><h1 id="apk瘦身"><a href="#apk瘦身" class="headerlink" title="apk瘦身"></a>apk瘦身</h1><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Android/" rel="tag">Android</a>, <a class="has-link-grey -link" href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag">性能优化</a>, <a class="has-link-grey -link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a>
+                </div>
+            </div>
         </div>
         
         
@@ -200,9 +230,49 @@ var _hmt = _hmt || [];
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/24/%E5%8D%88%E4%BC%91/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">午休</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/23/annotation/">
+                <span class="level-item">annotation</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'qCMt2ouY0KAXXNagrmPW9OfX-9Nh9j0Va',
+        app_key: 'Ad4cpSJQUIkb9A1R8zvV8MRt',
+        placeholder: 'Say something...'
+    });
+</script>
+
+    </div>
+</div>
 </div>
                 
 
@@ -479,6 +549,46 @@ var _hmt = _hmt || [];
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#绘制优化">
+        <span class="has-mr-6">1</span>
+        <span>绘制优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#内存优化">
+        <span class="has-mr-6">2</span>
+        <span>内存优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#存储优化">
+        <span class="has-mr-6">3</span>
+        <span>存储优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#稳定性优化">
+        <span class="has-mr-6">4</span>
+        <span>稳定性优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#耗电优化">
+        <span class="has-mr-6">5</span>
+        <span>耗电优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#apk瘦身">
+        <span class="has-mr-6">6</span>
+        <span>apk瘦身</span>
+        </a></li><li>
+        <a class="is-flex" href="#工具">
+        <span class="has-mr-6">7</span>
+        <span>工具</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
         
             <div class="card widget">
     <div class="card-content">
@@ -613,6 +723,46 @@ var _hmt = _hmt || [];
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#绘制优化">
+        <span class="has-mr-6">1</span>
+        <span>绘制优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#内存优化">
+        <span class="has-mr-6">2</span>
+        <span>内存优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#存储优化">
+        <span class="has-mr-6">3</span>
+        <span>存储优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#稳定性优化">
+        <span class="has-mr-6">4</span>
+        <span>稳定性优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#耗电优化">
+        <span class="has-mr-6">5</span>
+        <span>耗电优化</span>
+        </a></li><li>
+        <a class="is-flex" href="#apk瘦身">
+        <span class="has-mr-6">6</span>
+        <span>apk瘦身</span>
+        </a></li><li>
+        <a class="is-flex" href="#工具">
+        <span class="has-mr-6">7</span>
+        <span>工具</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
@@ -747,7 +897,7 @@ var _hmt = _hmt || [];
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="jitash" height="28">
+                    <img src="/images/logo.svg" alt="Android性能优化" height="28">
                 
                 </a>
                 <p class="is-size-7">
